@@ -13,8 +13,21 @@
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
+    <!-- Styles added from theme -->
+    <link rel="stylesheet" href="{{ asset('assets/css/custom-bs.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/jquery.fancybox.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap-select.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/fonts/icomoon/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/fonts/line-icons/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/animate.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/quill.snow.css') }}">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">   
+    <!-- Styles added from theme End --> 
+
     <!-- Scripts -->
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+   @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 <body>
     <div id="app">
@@ -76,5 +89,24 @@
             @yield('content')
         </main>
     </div>
+
+ <!-- SCRIPTS from tempalte file-->
+ <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
+ <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
+ <script src="{{ asset('assets/js/isotope.pkgd.min.js') }}"></script>
+ <script src="{{ asset('assets/js/stickyfill.min.js') }}"></script>
+ <script src="{{ asset('assets/js/jquery.fancybox.min.js') }}"></script>
+ <script src="{{ asset('assets/js/jquery.easing.1.3.js') }}"></script>
+ 
+ <script src="{{ asset('assets/js/jquery.waypoints.min.js') }}"></script>
+ <script src="{{ asset('assets/js/jquery.animateNumber.min.js') }}"></script>
+ <script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
+ <script src="{{ asset('assets/js/quill.min.js') }}"></script>
+ 
+ 
+ <script src="{{ asset('assets/js/bootstrap-select.min.js') }}"></script>
+ 
+ <script src="{{ asset('assets/js/custom.js') }}"></script>
+    
 </body>
 </html>
